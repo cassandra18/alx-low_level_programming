@@ -6,34 +6,28 @@
  */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
-	int k = '0';
+	int i, j, k;
 
-	while (i <= '7')
+	for (i = '0'; i < '9'; i++)
 	{
-		while (j <= '8')
-		{
-			while (k <= '9')
-			{
-				if (i < j && j && k)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (!(i == '7' && j == '8' && k == '9'))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				k++;
-			}
-			k = '0';
-			j++;
-		}
-		j = '0';
-		i++;
+
+	for (j = i + 1; j <= '9'; j++)
+	{
+
+	for (k = j + 1; k <= '9'; k++)
+	{
+	if ((j != i) != k)
+	{
+	putchar(i);
+	putchar(j);
+	putchar(k);
+	if (i == '7' && j == '8')
+	continue;
+	putchar(',');
+	putchar(' ');
+	}
+	}
+	}
 	}
 	putchar('\n');
 	return (0);
