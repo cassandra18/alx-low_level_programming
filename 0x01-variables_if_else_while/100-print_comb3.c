@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main-  a program that prints all possible different
+ * main - a program that prints all possible different
  * combinations of two digit
  * Return: 0
  */
