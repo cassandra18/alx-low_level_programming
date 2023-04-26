@@ -24,7 +24,7 @@ int main(void)
 	f2_h2 = f2 % 10000000000;
 	for (count = 93; count < 99; count++)
 	{
-		h1 = f1_h1 + f1_h1;
+		h1 = f1_h1 + f2_h1;
 		h2 = f1_h2 + f2_h2;
 		if (f1_h2 + f2_h2 > 9999999999)
 		{
