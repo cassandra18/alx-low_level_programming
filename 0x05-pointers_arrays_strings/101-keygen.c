@@ -26,6 +26,14 @@ int main(void)
 			dh1++;
 		for (in = 0; pwd[in]; in++)
 		{
+			if (pwd[in] >= (33 + dh1))
+			{
+				pwd[in] -= dh1;
+				break;
+			}
+		}
+		for (in = 0; pwd[in]; in++)
+		{
 			if (pwd[in] >= (33 + dh2))
 			{
 				pwd[in] -= dh2;
