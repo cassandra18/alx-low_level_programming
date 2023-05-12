@@ -1,18 +1,13 @@
 #include <stdio.h>
-#include "main.h"
-/*
- * main -  a program that prints the number of arguments passed into it.
- * Return: 0
+/**
+ * main - prints the number of arguments
+ * @argc: argument count
+ * @argv: vector argument
+ * return: 0
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	
-	while ( i < argc)
-	{
-	printf("%s\n", argv[i]);
-	i++;
-	}
-
+	(void) argv;
+	printf("%d\n", argv - 1);
 	return (0);
-}       
+}
