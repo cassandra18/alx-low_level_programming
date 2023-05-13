@@ -3,11 +3,16 @@
  * main - prints the number of arguments
  * @argc: argument count
  * @argv: vector argument
- * return: 0
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	(void) argv;
-	printf("%d\n", argv - 1);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
+
 	return (0);
 }
