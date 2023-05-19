@@ -11,24 +11,27 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	unsigned int s1_length = strlen(s1);
+	unsigned int s2_length = strlen(s2);
+	unsigned int result_length;
+	char *result;
+
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-
-	unsigned int s1_length = strlen(s1);
-	unsigned int s2_length = strlen(s2);
-
 	if (n >= s2_length)
 		n = s2_length;
 
-	unsigned int result_length = s1_length + n;
-	char *result = malloc((result_length + 1) * sizeof(char));
+	result_length = s1_length + n;
+
+	result = malloc((result_length + 1) * sizeof(char));
 
 	if (result == NULL)
 		return (NULL);
 	strcpy(result, s1);
-	strcat(result, s2, n);
+	strncat(result, s2, n);
 	return (result);
 }
