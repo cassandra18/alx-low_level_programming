@@ -1,5 +1,5 @@
-root@9e13affecaee:/alx-low_level_programming/0x0E-structures_typedef# cat > README.md
-0.Define a new type struct dog with the following elements:name, type = char *
+0.Define a new type struct dog with the following elements:
+name, type = char *
 age, type = float
 owner, type = char *
 1. Write a function that initialize a variable of type struct dog
