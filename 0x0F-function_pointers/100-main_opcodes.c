@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		printf("Erroe\n");
+		printf("Error\n");
 		exit(1);
 	}
 	bytes = atoi(argv[1]);
