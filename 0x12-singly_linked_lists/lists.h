@@ -21,21 +21,6 @@ typedef struct list_s
     struct list_s *next;
 } list_t;
 
-/**
- * _strlen - returns the length of a string
- * @str: the string whose length is to be returned
- * Return: length of @str
- *
-size_t _strlen(const char *str)
-{
-	size_t length = 0;
-
-	while(*str++)
-	length++;
-
-	return (length);
-}
-*/
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
