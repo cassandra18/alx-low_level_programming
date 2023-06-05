@@ -35,7 +35,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			current_node = current_node->next;
 			occurrence++;
 		}
-		if (current_node == NULL || current_node->next == NULL)
+		if (current_node == NULL || occurrence < (idx - 1))
 		{
 			free(new_node);
 			return (NULL);
