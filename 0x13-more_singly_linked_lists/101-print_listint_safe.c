@@ -11,6 +11,8 @@ size_t print_listint_safe(const listint_t *head)
 	size_t n = 0;
 	int loop_detected = 0;
 
+	if (head == NULL)
+		return (98);
 	while (tortoise != NULL && hare != NULL && hare->next != NULL)
 	{
 		tortoise = tortoise->next;
