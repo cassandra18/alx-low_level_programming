@@ -40,7 +40,7 @@ size_t free_listint_safe(listint_t **h)
 	{
 		current = *h;
 		*h = (*h)->next;
-		free(curret);
+		free(current);
 		n++;
 	}
 	return (n);
