@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 	int from_file, to_file, readto, writeto;
 	char *buffer;
 
-	if (argc != 1)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
