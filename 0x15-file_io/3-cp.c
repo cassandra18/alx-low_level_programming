@@ -6,7 +6,6 @@
  * @number: the status code to exit
  * @filename: the file name
  */
- 
 void handle_error(const char *message, const char *filename, int number)
 {
 	if (filename != NULL)
