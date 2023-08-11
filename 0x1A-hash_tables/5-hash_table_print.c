@@ -6,7 +6,7 @@
   */
 void hash_table_print(const hash_table_t *ht)
 {
-	int position = 1;
+	int position = 0;
 	unsigned long int j;
 	hash_node_t *currentItem = NULL;
 
@@ -15,14 +15,20 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (j = 0; j < ht->size; j++)
 	{
-		currentItem = ht->array[j];
-		while (currentItem != NULL)
+		if (ht->array[j] != NULL)
 		{
-			if (!position)
-				printf(", ");
-			printf("'%s': '%s'", currentItem->key, currentItem->value);
-			position = 0;
-			currentItem = currentItem->next;
+			if (position == 1)
+				printf(",");
+
+			currentItem = ht->array[j];
+			while (currentItem != NULL)
+			{
+				printf("'%s': '%s'", currentItem->key, currentItem->value)
+				currentItem = currentItem->next;
+				if (currentItem != NULL)
+					printf(", ");
+			}
+			position = 1;
 		}
 	}
 	printf("}\n");
