@@ -44,13 +44,13 @@ typedef struct listint_s
 skiplist_t *linear_skip(skiplist_t *list, int value);
 void free_list(listint_t *list);
 listint_t *create_list(int *array, size_t size);
-void print_list(const listint_t *list)
+/*void print_list(const listint_t *list)*/
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 void print_array(int *array, size_t left, size_t right);
 int interpolation_search(int *array, size_t size, int value);
 int jump_search(int *array, size_t size, int value);
-void print_array(int *array, size_t left, size_t right);
+/*void print_array(int *array, size_t left, size_t right);*/
 int exponential_search(int *array, size_t size, int value);
 int binary_search_2(int *array, size_t left, size_t right, int value);
 int advanced_binary(int *array, size_t size, int value);
