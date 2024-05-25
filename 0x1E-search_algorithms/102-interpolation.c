@@ -29,7 +29,8 @@ if (array[low] == value)
 return (low);
 return (-1);
 }
-pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
+pos = low + (((double)(high - low) / (array[high] - array[low])) *
+		(value - array[low]));
 
 if (pos >= size)
 {
